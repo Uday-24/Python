@@ -81,5 +81,24 @@ def loop5to8():
         for j in range(i, size+1):
             print("*", end=" ")
         print()
+
+    print()
+    print("8:Flipped Half Diamond Pattern")
+    n = 9
+    size = n // 2 + 1
+    for i in range(1, size+1):
+        for j in range(i, size+1):
+            print(end="  ")
+        for j in range(1, i+1):
+            print("*", end=" ")
+        print()
+    size -= 1
+    for i in range(1, size+1):
+        for j in range(1, i+2):
+            print(end="  ")
+        for j in range(i, size+1):
+            print("*", end=" ")
+        print()
+    
     
 loop5to8()
