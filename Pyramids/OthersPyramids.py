@@ -100,5 +100,71 @@ def loop5to8():
             print("*", end=" ")
         print()
     
-    
 loop5to8()
+
+
+
+# 9 Diamond Pattern         #10 Hourglass Pattern           #11 Number Pyramid          #12 Continuous Number Pyramid
+#     *                            * * * * *                       1                           1
+#    * *                            * * * *                        2 2                         2 3
+#   * * *                            * * *                         3 3 3                       4 5 6
+#  * * * *                            * *                          4 4 4 4                     7 8 9 10
+# * * * * *                            *                           5 5 5 5 5                   11 12 13 14 15
+#  * * * *                            * *
+#   * * *                            * * *
+#    * *                            * * * *
+#     *                            * * * * *
+def loop9to12():
+    print()
+    print("9: Diamond pattern")
+    size = 5
+    for i in range(1, size+1):
+        for j in range(i, size):
+            print(end=" ")
+        for j in range(1, i+1):
+            print("*", end=" ")
+        print()
+    size-=1
+    for i in range(1, size+1):
+        for j in range(1, i+1):
+            print(end=" ")
+        for j in range(i, size+1):
+            print("*", end=" ")
+        print()
+
+    print()
+    print("10: Hourglass Pattern")
+    size = 5
+    for i in range(1, size+1):
+        for j in range(1, i+1):
+            print(end=" ")
+        for j in range(i, size+1):
+            print("*", end=" ")
+        print()
+    size-=1
+    for i in range(1, size+1):
+        for j in range(i, size+1):
+            print(end=" ")
+        for j in range(1, i+2):
+            print("*", end=" ")
+        print()
+
+    print()
+    print("11: Number Pyramid")
+    size = 5
+    for i in range(1, size+1):
+        for j in range(1, i+1):
+            print(i, end=" ")
+        print()
+
+    print()
+    print("12: Continuous Number Pyramid")
+    size = 5
+    k = 1
+    for i in range(1, size+1):
+        for j in range(1, i+1):
+            print(k, end=" ")
+            k+=1
+        print()
+
+loop9to12()
