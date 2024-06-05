@@ -168,3 +168,62 @@ def loop9to12():
         print()
 
 loop9to12()
+
+
+# 13 Rotated Number Pyramid        #14 Palindrome Triangle        #15 Alphabet Pyramid        #16 Continuous Alphabet Pyramid
+#         1                                  1                          A                           A
+#       2 3                                2 3 2                        B B                         B C
+#     3 4 5                              3 4 5 4 3                      C C C                       D E F
+#   4 5 6 7                            4 5 6 7 6 5 4                    D D D D                     G H I J
+
+def loop13to16():
+    print()
+    print("13: Rotated Number Pyramid")
+    size = 4
+    k = 1
+    for i in range(1, size+1):
+        for j in range(i, size+1):
+            print(end="  ")
+        l = k
+        for j in range(1, i+1):
+            print(l, end=" ")
+            l += 1
+        k+=1
+        print()
+
+    print()
+    print("14: Palindrome Triangle")
+    size = 4
+    k=1
+    for i in range(1, size+1):
+        for j in range(i, size+1):
+            print(end="  ")
+        l = k
+        for j in range(1, i):
+            print(l, end=" ")
+            l += 1
+        k+=1
+        for j in range(1, i+1):
+            print(l, end=" ")
+            l-=1
+        print()
+
+    print()
+    print("15: Alphabet Pyramid")
+    size = 4 + 65
+    for i in range(65, size+1):
+        for j in range(65, i+1):
+            print(chr(i), end=" ")
+        print()
+
+    print()
+    print("16: Continuous Alphabet pyramid")
+    size = 4
+    k=65
+    for i in range(1, size+1):
+        for j in range(1, i+1):
+            print(chr(k), end=" ")
+            k+=1
+        print()
+
+loop13to16()
