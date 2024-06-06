@@ -227,3 +227,130 @@ def loop13to16():
         print()
 
 loop13to16()
+
+
+# 17 Rhombus Pattern
+# * * * * *
+#  * * * * *
+#   * * * * *
+#    * * * * *
+#     * * * * *
+def loop17():
+    print()
+    print("17: Rhombus Pattern")
+    sized = 5
+    for i in range(1, sized+1):
+        for j in range(1, i):
+            print(end=" ")
+        for j in range(1, sized+1):
+            print("*", end=" ")
+        print()
+
+loop17()
+
+
+# 18 Hollow Square Pattern
+# * * * * *
+# *       *
+# *       *
+# *       *
+# * * * * *
+def loop18():
+    print()
+    print("18: Hollow Square Pattern")
+    size = 5
+    for i in range(1, size+1):
+        for j in range(1, size+1):
+            if i==size or i==1 or j==size or  j==1:
+                print("*", end=" ")
+            else:
+                print(end="  ")
+        print()
+
+loop18()
+
+
+# 19 Hollow Full  Pyramid
+#     *
+#    * *
+#   *   *
+#  *     *
+# * * * * *
+
+def loop19():
+    print()
+    print("19: Hollow Full Pyramid")
+    size = 5
+    for i in range(1, size+1):
+        for j in range(i, size+1):
+            print(end=" ")
+        for j in range(1, i+1):
+            if j==1 or i==5 or j==i:
+                print("*", end=" ")
+            else:
+                print(end="  ")
+        print()
+
+loop19()
+
+
+# 20 Hollow Inverted  Pyramid
+# * * * * *
+#  *     *
+#   *   *
+#    * *
+#     *
+
+def loop20():
+    print()
+    print("20: Hollow Inverted Pyramid")
+    size = 5
+    for  i in range(1, size+1):
+        for j in range(1, i):
+            print(end=" ")
+        for j in range(i, size+1):
+            if i==1 or j==i or j==size:
+                print("*", end=" ")
+            else:
+                print(end="  ")
+        print()
+
+loop20()
+
+
+# 21 Hollow Diamond Pyramid
+#     *
+#    * *
+#   *   *
+#  *     *
+# *       *
+#  *     *
+#   *   *
+#    * *
+#     *
+
+def loop21():
+    print()
+    print("21: Hollow Diamond Pyramid")
+    size = 5
+    for i in range(1, size+1):
+        for j in range(i, size):
+            print(end=" ")
+        for j in range(1, i+1):
+            if j==i or j==1:
+                print("*", end=" ")
+            else:
+                print(end="  ")
+        print()
+    size-=1
+    for i in range(1, size+1):
+        for j in range(1, i+1):
+            print(end=" ")
+        for j in range(i, size+1):
+            if j==i or j==size:
+                print("*", end=" ")
+            else:
+                print(end="  ")    
+        print()
+
+loop21()
