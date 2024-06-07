@@ -354,3 +354,52 @@ def loop21():
         print()
 
 loop21()
+
+
+
+# 21 Hollow Hourglass Pyramid
+# * * * * * * * * *
+#   *           *
+#     *       *
+#       *   *
+#         *   
+#       *   *
+#     *       *
+#   *           *
+# * * * * * * * * *
+
+def loop22():
+    print()
+    print("21: Hollow Hourglass Pattern")
+    size = 5
+    for i in range(1, size+1):
+        for j in range(1, i):
+            print(end="  ")
+        for j in range(i, size):
+            if(j==i) or (i==1):
+                print("*", end=" ")
+            else:
+                print(end="  ") 
+        for j in range(i, size+1):
+            if i==1 or j==size:
+                print("*", end=" ")
+            else:
+                print(end="  ")
+        print()
+    size-=1
+    for i in range(1, size+1):
+        for j in range(i, size):
+            print(end="  ")
+        for j in range(1, i+1):
+            if j==1 or i==size:
+                print("*", end=" ")
+            else:
+                print(end="  ")
+        for j in  range(1, i+2):
+            if j==i+1 or i==size:
+                print("*", end=" ")
+            else:
+                print(end="  ")
+        print()
+
+loop22()
