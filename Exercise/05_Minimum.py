@@ -12,5 +12,5 @@ else:
 # Method 2
 print(min(a, b))
 
-# Method 3
+# Method 3 
 print(a if a<b else b)
