@@ -1,16 +1,16 @@
-# Find the maximum of two numbers
+# Find the minimum of two numbers
 
 a = int(input("Enter number 1 : "))
 b = int(input("Enter number 2 : "))
 
 # Method 1
-if a > b:
+if a < b:
     print(a)
 else:
     print(b)
 
 # Method 2
-print(max(a, b))
+print(min(a, b))
 
 # Method 3
-print(a if a>=b else b)
+print(a if a<b else b)
