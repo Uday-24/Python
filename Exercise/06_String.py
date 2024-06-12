@@ -1,5 +1,6 @@
 # Check whether the string is Palindrome or not
 
+# Method 1
 def palinrome(s):
     start = 0
     mid = len(s)//2
@@ -15,4 +16,11 @@ def palinrome(s):
 
 
 s = "racecar"
-print("Palindrome" if palinrome(s) else "Not Palindrome")
+print(f"{s} is Palindrome" if palinrome(s) else f"{s} is Not Palindrome")
+
+
+# Method 2
+s = "malayalam"         # s stands for string
+rs = s[::-1]            #rs stands for reversed stringr
+
+print(f"{s} is Palindrome" if s==rs else f"{s} is Not Palindrome")
