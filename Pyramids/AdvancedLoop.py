@@ -426,39 +426,50 @@ def loop94to96():
 def loop97():
     print("Loop 97 :")
     size = 5
+    k = 97
+    l = 96
     for i in range(size, 0 , -1):
         for j in range(1, i+1):
-            if(j==size and i==size):
+            if j == size:
                 continue
             print(j, end=" ")
-        s=97
+        k = 97
         for j in range(i+1, size):
-            print(chr(s),end=" ")
-            s+=1
-        s=101
+            print(chr(k), end=" ")
+            k+=1
+        
+        k = 97
         for j in range(i, size):
-            print(chr(s-i), end=" ")
-            s-=1
+            if j == i:
+                l += 1
+                k = l
+            print(chr(k), end=" ")
+            k -= 1
         for j in range(i, 0, -1):
             print(j, end=" ")
         print()
-    
+
+    size = size -1
+    k = 97
+    l = 96
     for i in range(1, size+1):
-        if(i==1):
-            continue
-        for j in range(1, i+1):
-            print(j, end=" ")
-        s=97
-        for j in range(i, size):
-            print(chr(s), end=" ")
-            s+=1
-        s=101
-        for j in range(i+1, size):
-            print(chr(s-i),end=" ")
-            s-=1
-        for j in range(i, 0, -1):
-            if(i==size and j==size):
+        for j in range(1, i+2):
+            if j == size+1:
                 continue
+            print(j, end=" ")
+        for j in range(i+1, size):
+            if j == i+1:
+                k = 97
+            print(chr(k), end=" ")
+            k += 1
+    
+        for j in range(i, size):
+            if j == i:
+                l = 97
+                l = l + (size - i - 1)
+            print(chr(l), end=" ")
+            l-=1
+        for j in range(i+1, 0, -1):
             print(j, end=" ")
         print()
 
