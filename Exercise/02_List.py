@@ -1,6 +1,6 @@
 # Python program to swap two elements in list
 
-lst = [10, 20, 50, 40, 30]
+lst = [10, 20, 50, 40, 30,70]
 print(lst)
 pos1 = int(input("Enter position 1 :"))-1
 pos2 = int(input("Enter position 2 :"))-1
