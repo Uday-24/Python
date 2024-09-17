@@ -142,7 +142,7 @@
                 ';
                 if($thread_user_id == $_SESSION['sno']){
                     echo '
-                    <a href="partials/_delete_thread.php?threadid='.$id.'">
+                    <a href="partials/_delete_thread.php?threadid='.$id.'&cat_id='.$_GET['cat_id'].'">
                         <button class="btn btn-primary" style="margin-left:20px;">Delete</button>
                     <a>
                     ';
