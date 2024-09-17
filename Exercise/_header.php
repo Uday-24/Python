@@ -84,5 +84,11 @@ if(isset($_GET['signupsuccess']) && $_GET['signupsuccess'] == 'true'){
      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
  </div>';
 
+}else if(isset($_GET['loginsuccess']) && $_GET['loginsuccess'] == 'false'){
+  echo '<div class="alert alert-warning alert-dismissible fade show my-0" role="alert">
+     <strong>Failed!</strong> Invalid Credentials
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+ </div>';
+
 }
 ?>
